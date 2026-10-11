@@ -33,8 +33,8 @@ To understand the 3-order-of-magnitude performance leap of HereticOS, it must be
 | :--- | :--- | :--- |
 | **OS Core Dependency** | Linux Kernel + Seastar Asynchronous Framework | **Sovereign Microkernel / Native Rewrite** |
 | **Network & I/O Path** | Epoll / Linux Network Stack / User-space Driver | **Native Kernel TCP/IP & Application I/O Stack** |
-| **Single-Core (vCPU) TPS** | ~12,500 - 15,000 TPS | **Estimated 1,000,000+ TPS** (Hardware Limit) |
-| **Extreme "ShiShan" TPS** | **~1,500,000 TPS Max** (Hard Capped by Hot-spot) | **20,000,000+ TPS** (Linear Multi-core Scaling) |
+| **Single-Core (vCPU) TPS** | ~12,500 - 15,000 TPS | **Estimated 1700K - 8000K+ TPS** (Hardware Limit) |
+| **Extreme "ShiShan" TPS** | **~1,500,000 TPS Max** (Hard Capped by Hot-spot Same Table) | **20,000,000+ TPS** (Linear Multi-core Scaling) |
 | **Scaling Philosophy** | Horizontal Scale-Out (Sharding via Partition Key) | Vertical Scale-Up (Zero-friction Hardware Parallelism) |
 | **Concurrency Lock Model** | Share-Nothing (Fails at localized memory hot-spots) | **Time-Sliced Binary Resource Group Pipeline** |
 | **Transaction Guarantee** | Eventual Consistency (BASE) / LWT (High Overhead) | **Laozi Compass Lock-Free Strong Consistency** |
